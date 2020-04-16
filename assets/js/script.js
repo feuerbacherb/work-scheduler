@@ -34,17 +34,16 @@ var createTimeBlocks = function() {
       var theRow = $("<div>")
          .attr("id", idTime[i])
          .addClass("row")
-         .addClass("time-block")
-         .addClass("align-items-center");
+         .addClass("time-block");
       var lftDiv = $("<div>")
          .addClass("hour")
          .addClass("col-sm-1");
       var midDiv = $("<textarea>")
-         .addClass("col-sm-9");
+         .addClass("col-sm-10");
       var rgtDiv = $("<button>")
          .attr("type", "button")
          .addClass("saveBtn")
-         .addClass("col-sm-1")
+         .addClass("col-1")
          .addClass("far")
          .addClass("fa-save");
 
