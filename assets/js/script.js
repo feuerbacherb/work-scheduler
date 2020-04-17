@@ -25,8 +25,8 @@ var createTime = function() {
          idTime[i] = numCount;
       }
    }
-   console.log(lstTime);
-   console.log(idTime);
+   //console.log(lstTime);
+   //console.log(idTime);
 }
 
 var createTimeBlocks = function() {
@@ -58,7 +58,7 @@ var createTimeBlocks = function() {
       rgtDiv.text();
       theRow.append(rgtDiv);
       
-      console.log(theRow);
+      //console.log(theRow);
    }
 }
 
@@ -83,3 +83,6 @@ var hrUpdater = function () {
 createTime();
 createTimeBlocks();
 hrUpdater();
+
+
+var updTime = setInterval(hrUpdater, 900000);
