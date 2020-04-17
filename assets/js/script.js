@@ -21,8 +21,13 @@ var loadInfo = function() {
    console.log(txtAreas.length);
 
    for (var i = 0; i < 10; i++) {
-      //console.log(txtAreas[i]);
-      $("textarea")[i].value = txtAreas[i];
+      
+      console.log(txtAreas[i] === null);
+      if(!txtAreas[i]) {
+         txtAreas[i] = "";
+      } else {
+         $("textarea")[i].value = txtAreas[i];
+      }
    }
 }
 
