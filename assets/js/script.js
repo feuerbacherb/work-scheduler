@@ -58,13 +58,25 @@ var createTimeBlocks = function() {
          .addClass("time-block");
       var lftDiv = $("<div>")
          .addClass("hour")
-         .addClass("col-sm-1");
+         .addClass("col-2")
+         .addClass("col-sm-1")
+         .addClass("col-md-1")
+         .addClass("col-lg-1")
+         .addClass("col-xl-1")
       var midDiv = $("<textarea>")
-         .addClass("col-sm-10");
+         .addClass("col-8")
+         .addClass("col-sm-10")
+         .addClass("col-md-10")
+         .addClass("col-lg-10")
+         .addClass("col-xl-10")
       var rgtDiv = $("<button>")
          .attr("type", "button")
          .addClass("saveBtn")
-         .addClass("col-1")
+         .addClass("col-2")
+         .addClass("col-sm-1")
+         .addClass("col-md-1")
+         .addClass("col-lg-1")
+         .addClass("col-xl-1")
          .addClass("far")
          .addClass("fa-save");
 
