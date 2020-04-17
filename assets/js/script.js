@@ -12,19 +12,15 @@ today.innerHTML = momentEl.format("dddd") + ", " + momentEl.format("MMMM Do YYYY
 
 // check to see if a localStorage of schedule exists and either create new or populate the rows
 var loadInfo = function() {
-   txtAreas = JSON.parse(localStorage.getItem("schedule"));
-
-   if (!txtAreas) {
-      txtAreas = [];
-   };
+   txtAreas = JSON.parse(localStorage.getItem("schedule")) || [];
 
    console.log(txtAreas.length);
 
    for (var i = 0; i < 10; i++) {
       
-      console.log(txtAreas[i] === null);
+      console.log(!txtAreas[i]);
       if(!txtAreas[i]) {
-         txtAreas[i] = "";
+         $("textarea")[i].value = "";
       } else {
          $("textarea")[i].value = txtAreas[i];
       }
